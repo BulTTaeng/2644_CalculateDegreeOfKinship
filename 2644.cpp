@@ -50,7 +50,7 @@ void BFS(int start){
         }
 
         q.pop();
-        visit[f] = true;
+
         for(int i =0; i<v[f].size(); i++){
             if(!visit[v[f][i]] ){
                 q.push(make_pair(v[f][i] , s+1));
